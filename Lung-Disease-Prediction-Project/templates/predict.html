@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% block body %}
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="text-center">Lung Disease Prediction Model</h4>
+              </div>
+              <div class="card-body">
+                  <form method="POST">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Location</label>
+                      <input type="text" name="location" class="form-control" id="inputEmail4" placeholder="Location" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="ethnicity">Ethnicity:</label>
+                      <select name="ethnicity" class="form-control" id="ethnicity" required>
+                          <option value="" disabled selected>Select Ethnicity</option>
+                          <option value="Asian">Asian</option>
+                          <option value="Hispanic">Hispanic</option>
+                          <option value="African-American">African-American</option>
+                          <option value="Caucasian">Caucasian</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="aqi">Air Quality Index (AQI):</label>
+                      <input type="number" id="aqi" name="aqi" class="form-control" placeholder="Air Quality Index" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="smokers_percentage">Smokers Percentage:</label>
+                      <input type="number" id="smokers_percentage" name="smokers_percentage" class="form-control" placeholder="Smokers Percentage" required>
+                    </div>
+                    <button type="submit" style="margin-top: 20px;" class="btn btn-primary">Predict</button>
+                  </form>
+              </div>
+              <div class="card-footer text-muted">
+              </div>
+            </div>
+          </div>
+{% endblock %}

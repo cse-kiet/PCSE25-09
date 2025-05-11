@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand" style="margin-left: 70px;" href="/">Lung Disease Prediction</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          {% if not session.std_logged_in and not session.admin_logged_in %}
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login_user">User Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login_admin">Admin Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register_user">User Register</a>
+          </li>
+          {% elif session.std_logged_in %}
+          <li class="nav-item active">
+            <a class="nav-link" href="/user">My Dashboard</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/predict">Prediction</a>
+          </li>
+          {% elif session.admin_logged_in %}
+          <li class="nav-item active">
+            <a class="nav-link" href="/admin">Admin Dashboard</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/view_history">View History</a>
+          </li>
+          {% endif %}
+        </ul>
+        {% if session.std_logged_in or session.admin_logged_in %}
+          <div class="nav-item">
+            <span class="nav-link" style="color:white" href="#">Welcome {{ session.uname }}</span>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" style="color:white" href="/logout">Logout</a>
+          </div>
+        {% endif %}
+      </div>
+</nav>
