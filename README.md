@@ -8,14 +8,14 @@
 
 
 ## Steps for Execution:
-STEP-1: python model.py- to train the model
-STEP-2: python app.py- to run the web app 
-STEP-3: ctrl+c- to stop the web app
-STEP-4: web app url- http://127.0.0.1:5000
-STEP-5: create a new user login/ Signup
-STEP-6: provide input to the Model.
-STEP-7: Output
-For clearing screen -> cls
+1.  STEP-1: python model.py- to train the model
+2.  STEP-2: python app.py- to run the web app
+3.  STEP-3: ctrl+c- to stop the web app
+4.  STEP-4: web app url- http://127.0.0.1:5000
+5.  STEP-5: create a new user login/ Signup
+6.  STEP-6: provide input to the Model.
+7.  STEP-7: Output
+8.  For clearing screen -> cls
 
 
 ## Checklist:
