@@ -1,15 +1,22 @@
-# Title of Project: [PROJECT_TITLE_HERE]
+# Title of Project: IMPACT OF ETHNICITY ON PREVALANCE OF LUNG DISEASES
+
 
 ## Team Members:
-1. [TEAM_MEMBER_1_NAME]
-2. [TEAM_MEMBER_2_NAME]
-3. [TEAM_MEMBER_3_NAME]
-4. [TEAM_MEMBER_4_NAME]
+1. ALOK SINGH (2100290100022)
+2. DEVANSH VERMA (2100290100052)
+3. DHRUV GUPTA (2100290100055)
+
 
 ## Steps for Execution:
-1. [STEP 1]
-2. [STEP 2]
-   (Add more steps as needed)
+STEP-1: python model.py- to train the model
+STEP-2: python app.py- to run the web app 
+STEP-3: ctrl+c- to stop the web app
+STEP-4: web app url- http://127.0.0.1:5000
+STEP-5: create a new user login/ Signup
+STEP-6: provide input to the Model.
+STEP-7: Output
+For clearing screen -> cls
+
 
 ## Checklist:
 1. Final Project Report
