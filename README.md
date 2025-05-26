@@ -8,7 +8,7 @@
 
 
 ## Steps for Execution:
-1.  STEP-1: python model.py- to train the model
+1.  STEP-1: python model.py- to train the model, write the file name as "python Filename.py"
 2.  STEP-2: python app.py- to run the web app
 3.  STEP-3: ctrl+c- to stop the web app
 4.  STEP-4: web app url- http://127.0.0.1:5000
